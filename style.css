@@ -1,0 +1,11 @@
+#drawingBoxesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.drawingContainer {
+  margin: 10px auto;
+  height: 25px;
+  width: 25px;
+}
