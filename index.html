@@ -11,21 +11,22 @@
       <h1 id="title">Etch-A-Sketch</h1>
     </div>
 
-    <div id="userChoicesContainer">
-      <div id="instructionsContainer">
-        <p id="instructions">Select a colour to get started!</p>
-      </div>
-      <div id="userColourChoiceContainer">
-        <label for="colourPicker">Select your favorite colour:</label>
-        <input type="color" id="colourPicker" onchange="changecolor(this)" />
+    <div id="oneContainerToRuleThemAll">
+      <div id="userChoicesContainer">
+        <div id="instructionsContainer">
+          <p id="instructions">Select a colour to get started!</p>
+        </div>
+        <div id="userColourChoiceContainer">
+          <input type="color" id="colourPicker" onchange="changecolor(this)" />
+        </div>
+
+        <div id="resetButtonDiv">
+          <button id="resetButton">Reset</button>
+        </div>
       </div>
 
-      <div id="resetButtonDiv">
-        <button id="resetButton">Reset</button>
-      </div>
+      <div id="drawingBoxesContainer"></div>
     </div>
-
-    <div id="drawingBoxesContainer"></div>
 
     <script src="script.js"></script>
   </body>

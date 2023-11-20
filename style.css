@@ -7,10 +7,52 @@
   margin: 25px pauto;
 }
 
+#oneContainerToRuleThemAll {
+  display: flex;
+}
+
+#userChoicesContainer {
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#userColourChoiceContainer {
+  margin: 50px auto;
+  text-align: center;
+}
+
+#colourPicker {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#resetButtonDiv {
+  margin: 50px auto;
+  text-align: center;
+}
+
+#resetButton {
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: lightcoral;
+  font-weight: bold;
+}
+
+#resetButton:hover,
+#colourPicker:hover {
+  cursor: pointer;
+}
+
 #drawingBoxesContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 50%;
 }
 
 #drawingBoxesContainer > div {
