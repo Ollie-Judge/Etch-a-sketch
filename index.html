@@ -15,7 +15,16 @@
 
     <div id="drawingBoxesContainer"></div>
 
-    <div id="resetButtonDiv"><button id="resetButton">Reset</button></div>
+    <div id="userChoicesContainer">
+      <div id="userColourChoiceContainer">
+        <label for="colourPicker">Select your favorite colour:</label>
+        <input type="color" id="colourPicker" onchange="changecolor(this)" />
+      </div>
+
+      <div id="resetButtonDiv">
+        <button id="resetButton">Reset</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

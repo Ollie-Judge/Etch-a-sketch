@@ -1,9 +1,9 @@
-let drawingBoxesContainer = document.getElementById("drawingBoxesContainer");
+const drawingBoxesContainer = document.getElementById("drawingBoxesContainer");
 
-let resetButton = document.getElementById("resetButton");
+const resetButton = document.getElementById("resetButton");
 
 let userDivChoice = 273;
-let userColourChoice = "red";
+let userColourChoice;
 
 const generateDivs = (userDivChoice) => {
   for (let i = 0; i < userDivChoice; i++) {
@@ -19,6 +19,10 @@ const generateDivs = (userDivChoice) => {
 };
 
 generateDivs(userDivChoice);
+
+function changecolor(el) {
+  userColourChoice = el.value;
+}
 
 resetButton.addEventListener("click", function () {
   location.reload();
