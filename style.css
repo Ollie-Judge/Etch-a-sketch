@@ -1,11 +1,18 @@
 #drawingBoxesContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
 }
 
-.drawingContainer {
-  margin: 10px auto;
+#drawingBoxesContainer > div {
+  border: 1px solid black;
   height: 25px;
   width: 25px;
+}
+
+#drawingBoxesContainer > div:nth-child(17n + 1) {
+  width: 100%;
+  border: 0;
+  height: 0;
 }

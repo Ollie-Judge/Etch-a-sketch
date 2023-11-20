@@ -1,13 +1,11 @@
 let drawingBoxesContainer = document.getElementById("drawingBoxesContainer");
 
-let userDivChoice = 16; //document.getElementById('userDivChoice')
+let userDivChoice = 273;
 let userColourChoice = "red";
 
 const generateDivs = (userDivChoice) => {
   for (let i = 0; i < userDivChoice; i++) {
     let drawingContainer = document.createElement("div");
-
-    drawingContainer.appendChild(document.createTextNode(i));
     drawingContainer.classList = `drawingContainer drawingContainer${i}`;
 
     drawingBoxesContainer.appendChild(drawingContainer);
