@@ -1,8 +1,16 @@
+#titleContainer {
+  margin: auto;
+}
+
+#title {
+  text-align: center;
+  margin: 25px pauto;
+}
+
 #drawingBoxesContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  text-align: center;
+  justify-content: center;
 }
 
 #drawingBoxesContainer > div {

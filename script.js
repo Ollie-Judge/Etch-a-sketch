@@ -1,5 +1,7 @@
 let drawingBoxesContainer = document.getElementById("drawingBoxesContainer");
 
+let resetButton = document.getElementById("resetButton");
+
 let userDivChoice = 273;
 let userColourChoice = "red";
 
@@ -10,18 +12,14 @@ const generateDivs = (userDivChoice) => {
 
     drawingBoxesContainer.appendChild(drawingContainer);
 
-    drawingContainer.addEventListener("click", function () {
+    drawingContainer.addEventListener("mouseover", function () {
       drawingContainer.style.backgroundColor = userColourChoice;
     });
-
-    //div.classname = "block";
   }
 };
 
 generateDivs(userDivChoice);
 
-// once divs are created, just add a click event to all of the divs so that when each one is clicked, you then colour the div the colour you selected
-
-// for (let i = 0; i < 16; i++) {
-//   console.log(i);
-// }
+resetButton.addEventListener("click", function () {
+  location.reload();
+});
